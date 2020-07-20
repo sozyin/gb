@@ -1,0 +1,32 @@
+/* BlackBox tags */
+@charset "UTF-8";
+
+/* grow in with pulse */
+.avatar-1BDn8e[src*="687358796124913704"]:hover + h2:after,
+.avatar-1BDn8e[src*="386074198138814465"]:hover + h2::after,
+.avatar-1BDn8e[src*="386074198138814465"]:hover + h2::after{
+	animation: mentionpulse 2s infinite, popoutanim .3s;
+}
+
+@keyframes popoutanim {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@-webkit-keyframes mentionpulse {
+	0% {
+		-webkit-box-shadow: 0 0 0 2px rgba(128, 0, 128, 0);
+	}
+	50% {
+		-webkit-box-shadow: 0 0 0 0 rgba(128, 0, 128, 1);
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 2px rgba(128, 0, 128, 0);
+	}
+}
+
+@keyframes 
